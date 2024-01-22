@@ -1,0 +1,31 @@
+
+<form [formGroup]="loginForm">
+    <body>
+        <section>
+            <form>
+                <h1>Login</h1>
+                <div class="inputbox">
+                   
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                   
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember Me</label>
+                  <a href="#">Forget Password</a>
+                </div>
+                <button (click)="Login()">Log In</button>
+                <div class="register">
+                    <p>Don't have a account  <button (click)="goToRegister()">Register</button></p>
+                </div>
+            </form>
+        </section>
+    </body>
+
+    <!-- <button (click)="Login()">Log In</button>
+    <button (click)="goToRegister()">Register</button>
+</form> -->
